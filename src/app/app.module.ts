@@ -1,3 +1,4 @@
+import { SpeechRecognitionService } from './services/speech-recognition.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -16,7 +17,7 @@ import { SpeechComponent } from './speech/speech.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [SpeechRecognitionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

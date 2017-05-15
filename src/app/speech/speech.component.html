@@ -1,3 +1,13 @@
 <p>
-  speech works!
+  {{interimData}}
 </p>
+
+<div>
+  <span>
+    <button (click)="toggleRecording()">{{buttonText}}</button>
+  </span>
+</div>
+
+<div *ngFor="let data of finalData">
+  {{data}}
+</div>
